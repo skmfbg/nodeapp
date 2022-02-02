@@ -5,7 +5,7 @@ const path = require('path');
 
 app.set('view engine', 'hbs');
 
-const spath=path.join(__dirname,"/resto");
+const spath=path.join(__dirname,"/induko");
 app.use(express.static(spath));
 
 app.get('/',(req,res)=>{
