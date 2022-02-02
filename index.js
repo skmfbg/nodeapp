@@ -13,6 +13,13 @@ app.get('/',(req,res)=>{
   res.render('index')
 });
 
+app.get('/first',(req,res)=>{
+const spath=path.join(__dirname,"/nekmit");
+app.use(express.static(spath));
+  
+  res.render('index')
+});
+
 
 
 
